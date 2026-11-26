@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Kwiaciarnia Madlen Flowers Katowice - bukiety z dostawą, kwiatomaty 24/7</title>
+<meta name="description" content="Kwiaciarnia w Katowicach: bukiety i flowerboxy z dostawą po Katowicach i Śląsku, zamówienia online o każdej porze, trzy kwiatomaty 24/7, florystyka ślubna i warsztaty.">
+<link rel="icon" href="img/kwiat.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-m-720.webp" imagesrcset="img/hero-m-720.webp 720w, img/hero-m-1080.webp 1080w, img/hero-m-1440.webp 1440w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1920.webp" imagesrcset="img/hero-960.webp 960w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<style>
+@font-face{font-family:Cormorant;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Cormorant;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--roz:#C7587C;--roz-c:#A8406A;--ziel:#47704C;--ziel-c:#2E4D33;--tekst:#1D2620;--szary:#5A635D;--tlo2:#F2F4F3;--linia:#DDE2DF;--max:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 Jost,system-ui,sans-serif;color:var(--tekst);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Cormorant,Georgia,serif;font-weight:500;line-height:1.08;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(34px,4.4vw,56px)}
+h3{font-size:clamp(25px,2.2vw,30px)}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border:0;border-radius:2px;background:var(--roz-c);color:#fff;font:500 17px/1 Jost,sans-serif;text-decoration:none;cursor:pointer;transition:background .2s}
+.btn:hover{background:#8E3157}
+.btn.jasny{background:#fff;color:var(--ziel-c)}
+.btn.jasny:hover{background:#F2F4F3}
+.kwiat{display:inline-block;background:currentColor;-webkit-mask:url(img/kwiat.svg) center/contain no-repeat;mask:url(img/kwiat.svg) center/contain no-repeat;aspect-ratio:395/344}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:84px}
+.logo{display:block;width:56px;height:67px;background:var(--roz);-webkit-mask:url(img/logo.svg) center/contain no-repeat;mask:url(img/logo.svg) center/contain no-repeat;flex:none}
+.menu{display:flex;gap:30px;margin-left:auto;list-style:none;padding:0;margin-top:0;margin-bottom:0}
+.menu a{text-decoration:none;font-size:16px;font-weight:500;padding:6px 0;border-bottom:1.5px solid transparent}
+.menu a:hover,.menu a.akt{border-color:var(--roz)}
+.top .tel{font-weight:600;text-decoration:none;color:var(--ziel-c);white-space:nowrap}
+.koszyk{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:500}
+.koszyk svg{width:24px;height:24px}
+.burger{display:none;margin-left:auto;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--tekst);margin:6px 0;transition:transform .25s,opacity .25s}
+.top.otw .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.top.otw .burger span:nth-child(2){opacity:0}
+.top.otw .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 84px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ziel-c)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero picture img{object-position:62% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,40,28,.82) 0%,rgba(24,40,28,.6) 40%,rgba(24,40,28,0) 68%),linear-gradient(0deg,rgba(24,40,28,.55) 0%,rgba(24,40,28,0) 40%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:64px;padding-bottom:clamp(44px,8vh,96px)}
+.hero h1{font-size:clamp(46px,5.6vw,84px);max-width:11.5em;line-height:1.02}
+.hero h1 small{display:block;font:500 clamp(17px,1.4vw,20px)/1.4 Jost,sans-serif;letter-spacing:0;margin-bottom:18px;color:#fff}
+.hero .lead{font-size:clamp(18px,1.5vw,21px);max-width:34em;margin:22px 0 32px;color:#F4F6F4}
+.hero .akcje{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center}
+.hero .akcje .tel{color:#fff;font-weight:500;text-decoration:none;font-size:18px;border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:2px}
+.hero .kwiat{position:absolute;right:clamp(24px,5vw,90px);bottom:clamp(40px,8vh,96px);width:clamp(120px,13vw,220px);color:#fff;opacity:.92;z-index:2}
+
+/* pasek automatow */
+.pasek{background:var(--ziel);color:#fff}
+.pasek .wrap{display:flex;flex-wrap:wrap;gap:8px 34px;align-items:center;min-height:64px;padding-top:12px;padding-bottom:12px;font-size:16px}
+.pasek b{font-weight:600}
+.pasek a{color:#fff}
+
+section{padding:clamp(64px,9vw,120px) 0}
+.szara{background:var(--tlo2)}
+.glowa{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:18px 40px;margin-bottom:40px}
+.glowa h2{display:flex;align-items:flex-end;gap:16px}
+.glowa h2 .kwiat{width:54px;color:var(--roz);flex:none;margin-bottom:6px}
+.glowa p{max-width:36em;color:var(--szary);margin:0}
+
+/* bukiety */
+.kategorie{display:flex;flex-wrap:wrap;gap:6px 26px;margin:-14px 0 34px;padding:0;list-style:none}
+.kategorie a{text-decoration:none;color:var(--szary);font-weight:500;border-bottom:1px solid var(--linia);padding-bottom:3px}
+.kategorie a:hover{color:var(--roz-c);border-color:var(--roz)}
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*24px)/4);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-bottom:4px;overscroll-behavior-x:contain}
+.tor::-webkit-scrollbar{display:none}
+.tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.tor.ciag *{pointer-events:none}
+.bukiet{scroll-snap-align:start;margin:0}
+.bukiet .foto{position:relative;overflow:hidden;background:var(--tlo2)}
+.bukiet img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .5s ease}
+.bukiet:hover img{transform:scale(1.03)}
+.bukiet figcaption{padding:16px 2px 0;display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1.5px solid var(--roz);margin-top:14px}
+.bukiet h3{font-size:25px}
+.bukiet .cena{white-space:nowrap;font-weight:600;color:var(--roz-c)}
+.strzalki{display:flex;gap:10px}
+.strzalki button{width:52px;height:52px;border:1px solid var(--tekst);background:#fff;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.strzalki button:hover{background:var(--tekst);color:#fff}
+.strzalki svg{width:20px;height:20px}
+.zrodlo{font-size:14px;color:var(--szary);margin-top:22px}
+
+/* zamowienie */
+.zam{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:start}
+.kroki{list-style:none;margin:28px 0 0;padding:0;counter-reset:k}
+.kroki li{padding:18px 0 18px 46px;border-top:1px solid var(--linia);position:relative}
+.kroki li:last-child{border-bottom:1px solid var(--linia)}
+.kroki li::before{content:"";position:absolute;left:0;top:23px;width:26px;height:23px;background:var(--roz);-webkit-mask:url(img/kwiat.svg) center/contain no-repeat;mask:url(img/kwiat.svg) center/contain no-repeat}
+.kroki b{font-weight:600}
+table.dostawa{width:100%;border-collapse:collapse;background:#fff;font-size:16px}
+.dostawa caption{text-align:left;font:500 28px/1.1 Cormorant,serif;padding:0 0 16px}
+.dostawa td{padding:14px 18px;border-bottom:1px solid var(--linia);vertical-align:top}
+.dostawa td:last-child{text-align:right;font-weight:600;white-space:nowrap;color:var(--ziel-c)}
+.dostawa tr:last-child td{border-bottom:0}
+.przypis{font-size:15px;color:var(--szary);margin-top:16px}
+
+/* kwiatomaty */
+.automaty{background:var(--ziel);color:#fff;position:relative;overflow:hidden}
+.automaty .rys{position:absolute;right:-6%;top:50%;transform:translateY(-50%);width:min(56vw,760px);color:var(--roz);opacity:.55;pointer-events:none}
+.automaty .wrap{position:relative}
+.automaty h2{max-width:12em}
+.automaty .intro{max-width:38em;font-size:19px;margin:22px 0 46px;color:#EEF3EF}
+.adresy{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(255,255,255,.35)}
+.adres{padding:26px 28px 26px 0;border-right:1px solid rgba(255,255,255,.2)}
+.adres+.adres{padding-left:28px}
+.adres:last-child{border-right:0}
+.adres h3{font-size:32px}
+.adres p{margin:8px 0 14px;color:#EEF3EF}
+.adres a{font-weight:500;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.55)}
+.automaty .info{margin-top:40px;max-width:42em;font-size:17px;color:#EEF3EF;border-left:2px solid var(--roz);padding-left:20px}
+
+/* slub */
+.slub{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,5vw,80px);align-items:center}
+.slub .fotki{display:grid;grid-template-columns:1fr 1.15fr;gap:16px;align-items:end}
+.slub .fotki img{width:100%;object-fit:cover}
+.slub .fotki img:first-child{aspect-ratio:3/4}
+.slub .fotki img:last-child{aspect-ratio:4/5}
+.fot{font-size:13px;color:var(--szary);margin-top:10px}
+.opcje{margin:30px 0 34px;padding:0;list-style:none}
+.opcje li{padding:20px 0;border-top:1px solid var(--linia)}
+.opcje li:last-child{border-bottom:1px solid var(--linia)}
+.opcje h3{font-size:28px;margin-bottom:6px}
+.opcje p{margin:0;color:var(--szary)}
+
+/* warsztaty */
+.warsz{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,80px);align-items:start}
+.terminy{list-style:none;margin:26px 0 30px;padding:0}
+.terminy li{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--linia);align-items:baseline}
+.terminy li:last-child{border-bottom:1px solid var(--linia)}
+.terminy time{font:500 26px/1 Cormorant,serif;color:var(--roz-c)}
+.terminy span{display:block;color:var(--szary);font-size:15px}
+.warsz .fotki{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.warsz .fotki img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.warsz .fotki img:last-child{margin-top:56px}
+.firmy{margin-top:26px;padding-top:22px;border-top:1.5px solid var(--roz)}
+
+/* o nas */
+.onas{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,5vw,90px);align-items:center}
+.onas img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.onas blockquote{margin:0 0 26px;font:500 clamp(28px,2.8vw,40px)/1.18 Cormorant,serif}
+.onas .podpis{display:flex;align-items:center;gap:14px;color:var(--szary);margin-bottom:26px}
+.onas .podpis .kwiat{width:44px;color:var(--roz)}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(36px,5vw,90px)}
+.dane dl{margin:26px 0 0;display:grid;grid-template-columns:auto 1fr;gap:12px 22px}
+.dane dt{color:var(--szary)}
+.dane dd{margin:0;font-weight:500}
+.dane dd a{text-decoration:none;border-bottom:1px solid var(--linia)}
+.godz{margin-top:30px;padding-top:22px;border-top:1px solid var(--linia);font-size:16px}
+.godz h3{font-size:26px;margin-bottom:8px}
+form{background:#fff;padding:clamp(24px,3vw,40px);border-top:3px solid var(--roz)}
+form h3{margin-bottom:18px}
+label{display:block;font-size:15px;font-weight:500;margin:0 0 6px}
+input,textarea,select{width:100%;font:400 17px Jost,sans-serif;padding:13px 14px;border:1px solid #C9D0CC;border-radius:2px;background:#fff;color:var(--tekst);margin-bottom:16px}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--roz);outline-offset:0;border-color:var(--roz)}
+textarea{min-height:120px;resize:vertical}
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.uwaga{font-size:14px;color:var(--szary);margin:14px 0 0}
+.mapa{margin-top:30px;aspect-ratio:16/9;background:var(--tlo2) center/cover;position:relative;display:grid;place-items:center;border:1px solid var(--linia)}
+.mapa button{position:relative}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* stopka */
+footer.stopka{background:#fff;border-top:1px solid var(--linia);padding:56px 0 30px;font-size:16px;color:var(--szary)}
+.stopka .kol{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:30px}
+.stopka h4{font:500 22px/1.1 Cormorant,serif;color:var(--tekst);margin:0 0 12px}
+.stopka ul{list-style:none;margin:0;padding:0}
+.stopka li{margin:0 0 6px}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:var(--roz-c)}
+.stopka .logo{width:70px;height:84px;margin-bottom:14px}
+.dol{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;margin-top:40px;padding-top:22px;border-top:1px solid var(--linia);font-size:15px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1100px){
+  .menu{gap:20px}.top .tel{display:none}
+  .tor{grid-auto-columns:calc((100% - 2*20px)/3);gap:20px}
+}
+@media (max-width:900px){
+  .burger{display:block}
+  .menu{position:fixed;left:0;right:0;top:84px;bottom:0;background:#fff;flex-direction:column;gap:0;padding:12px 24px 32px;transform:translateX(100%);transition:transform .3s ease;overflow-y:auto}
+  .top.otw .menu{transform:none}
+  .menu a{display:block;font:500 30px/1.2 Cormorant,serif;padding:14px 0;border-bottom:1px solid var(--linia)}
+  .menu a.akt{color:var(--roz-c);border-color:var(--linia)}
+  .menu .m-tel{display:block}
+  .koszyk span{display:none}
+  .koszyk{margin-left:auto}
+  .burger{margin-left:0}
+  .zam,.slub,.warsz,.onas,.kontakt{grid-template-columns:1fr}
+  .adresy{grid-template-columns:1fr}
+  .adres,.adres+.adres{padding:22px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.2)}
+  .stopka .kol{grid-template-columns:1fr 1fr}
+  .stopka .kol>div:first-child{grid-column:1/-1}
+  .automaty .rys{width:90vw;right:-30%;top:auto;bottom:-12%;transform:none;opacity:.35}
+}
+@media (min-width:901px){.menu .m-tel{display:none}}
+@media (max-width:760px){
+  .top .wrap{height:72px;gap:12px}
+  .logo{width:48px;height:58px}
+  .menu{top:72px}
+  .hero{min-height:calc(100svh - 72px)}
+  .hero picture img{object-position:50% 30%}
+  .hero::after{background:linear-gradient(0deg,rgba(24,40,28,.92) 0%,rgba(24,40,28,.78) 45%,rgba(24,40,28,.15) 76%,rgba(24,40,28,0) 90%)}
+  .hero .wrap{padding-top:40px;padding-bottom:30px}
+  .hero h1{font-size:clamp(38px,10.6vw,50px)}
+  .hero h1 small{font-size:15px;margin-bottom:12px}
+  .hero .lead{font-size:17px;margin:14px 0 24px;line-height:1.5}
+  .hero .kwiat{display:none}
+  .hero .btn{width:100%}
+  .hero .akcje{gap:16px}
+  .hero .akcje .tel{margin:0 auto}
+  .tor{grid-auto-columns:78%;gap:16px}
+  .strzalki{display:none}
+  .glowa{margin-bottom:28px}
+  .glowa h2 .kwiat{width:42px}
+  .dwa{grid-template-columns:1fr}
+  .terminy li{grid-template-columns:78px 1fr;gap:14px}
+  .warsz .fotki img:last-child{margin-top:36px}
+  .pasek .wrap{font-size:15px;gap:4px 18px}
+  body{font-size:16.5px}
+}
+@media (max-width:760px) and (max-height:700px){
+  .hero h1{font-size:36px}
+  .hero .lead{font-size:16px;margin:12px 0 24px}
+  .hero .wrap{padding-bottom:22px;padding-top:28px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Madlen Flowers - strona główna"></a>
+    <ul class="menu" id="menu">
+      <li><a href="#bukiety" class="akt">Sklep</a></li>
+      <li><a href="#dostawa">Dostawa</a></li>
+      <li><a href="#kwiatomaty">Kwiatomaty 24/7</a></li>
+      <li><a href="#slub">Śluby</a></li>
+      <li><a href="#warsztaty">Warsztaty</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li class="m-tel"><a href="tel:+48577974279">577 974 279</a></li>
+    </ul>
+    <a class="tel" href="tel:+48577974279">577 974 279</a>
+    <a class="koszyk" href="#bukiety" aria-label="Koszyk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8c0-3 1.3-4.5 3-4.5S15 5 15 8"/></svg><span>Koszyk</span></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <picture>
+    <source media="(max-width:760px)" srcset="img/hero-m-720.webp 720w, img/hero-m-1080.webp 1080w, img/hero-m-1440.webp 1440w" sizes="100vw">
+    <img src="img/hero-1920.webp" srcset="img/hero-960.webp 960w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" sizes="100vw" width="1920" height="1077" alt="Kolorowy bukiet z kalią, różami i lwią paszczą z kwiaciarni Madlen Flowers" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <h1><small>Kwiaciarnia Madlen Flowers, Katowice</small>Kwiaciarnia w Katowicach, która jest zawsze otwarta</h1>
+    <p class="lead">Bukiety i flowerboxy z dostawą po Katowicach i okolicach. Zamówienie online złożysz o każdej porze, a po kwiaty możesz też podejść do jednego z trzech kwiatomatów 24/7.</p>
+    <div class="akcje">
+      <a class="btn" href="#bukiety">Wybierz bukiet</a>
+      <a class="tel" href="tel:+48577974279">lub zadzwoń: 577 974 279</a>
+    </div>
+  </div>
+  <i class="kwiat" aria-hidden="true"></i>
+</section>
+
+<div class="pasek">
+  <div class="wrap">
+    <span><b>Kwiatomaty 24/7:</b></span>
+    <span>Muchowiec, ul. Szybowcowa 21</span>
+    <span>Dąb, ul. Dębowa 58</span>
+    <span>Bogucice, ul. Katowicka 19A</span>
+  </div>
+</div>
+
+<section id="bukiety">
+  <div class="wrap">
+    <div class="glowa">
+      <h2><i class="kwiat" aria-hidden="true"></i>Bukiety z naszej pracowni</h2>
+      <div class="strzalki">
+        <button type="button" data-kier="-1" aria-label="Poprzednie bukiety"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button type="button" data-kier="1" aria-label="Następne bukiety"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <ul class="kategorie">
+      <li><a href="#bukiety">Bukiety a'la Madlen</a></li>
+      <li><a href="#bukiety">Bukiety naturalne</a></li>
+      <li><a href="#bukiety">Kwiaty w pudełku</a></li>
+      <li><a href="#bukiety">Kwiaty pogrzebowe</a></li>
+      <li><a href="#bukiety">Dekoracje</a></li>
+    </ul>
+    <div class="tor" id="tor">
+      <figure class="bukiet"><div class="foto"><img src="img/b-roze-600.webp" srcset="img/b-roze-600.webp 600w, img/b-roze-900.webp 900w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 300px" width="600" height="750" loading="lazy" alt="Bukiet Kolorowe Róże"></div><figcaption><h3>Kolorowe Róże</h3><span class="cena">od 139 zł</span></figcaption></figure>
+      <figure class="bukiet"><div class="foto"><img src="img/b-biglove-600.webp" srcset="img/b-biglove-600.webp 600w, img/b-biglove-900.webp 900w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 300px" width="600" height="750" loading="lazy" alt="Bukiet Big Love z czerwonych róż"></div><figcaption><h3>Big Love</h3><span class="cena">od 379 zł</span></figcaption></figure>
+      <figure class="bukiet"><div class="foto"><img src="img/b-delikatny-600.webp" srcset="img/b-delikatny-600.webp 600w, img/b-delikatny-900.webp 900w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 300px" width="600" height="750" loading="lazy" alt="Bukiet Delikatny z różowych róż i goździków"></div><figcaption><h3>Delikatny</h3><span class="cena">od 159 zł</span></figcaption></figure>
+      <figure class="bukiet"><div class="foto"><img src="img/b-box-czerwien-600.webp" srcset="img/b-box-czerwien-600.webp 600w, img/b-box-czerwien-900.webp 900w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 300px" width="600" height="750" loading="lazy" alt="Flowerbox W czerwieni"></div><figcaption><h3>Flowerbox W czerwieni</h3><span class="cena">od 259 zł</span></figcaption></figure>
+      <figure class="bukiet"><div class="foto"><img src="img/b-gozdziki-600.webp" srcset="img/b-gozdziki-600.webp 600w, img/b-gozdziki-900.webp 900w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 300px" width="600" height="750" loading="lazy" alt="Bukiet Kolorowe Goździki"></div><figcaption><h3>Kolorowe Goździki</h3><span class="cena">od 109 zł</span></figcaption></figure>
+      <figure class="bukiet"><div class="foto"><img src="img/b-box-gipsowka-600.webp" srcset="img/b-box-gipsowka-600.webp 600w, img/b-box-gipsowka-900.webp 900w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 300px" width="600" height="750" loading="lazy" alt="Flowerbox Gipsówka"></div><figcaption><h3>Flowerbox Gipsówka</h3><span class="cena">od 149 zł</span></figcaption></figure>
+      <figure class="bukiet"><div class="foto"><img src="img/b-koszyk-roz-600.webp" srcset="img/b-koszyk-roz-600.webp 600w, img/b-koszyk-roz-900.webp 900w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 300px" width="600" height="750" loading="lazy" alt="Koszyk w różu"></div><figcaption><h3>Koszyk w różu</h3><span class="cena">od 109 zł</span></figcaption></figure>
+      <figure class="bukiet"><div class="foto"><img src="img/b-polny-600.webp" srcset="img/b-polny-600.webp 600w, img/b-polny-900.webp 900w" sizes="(max-width:760px) 78vw, (max-width:1100px) 31vw, 300px" width="600" height="750" loading="lazy" alt="Bukiet Polny"></div><figcaption><h3>Polny</h3><span class="cena">od 109 zł</span></figcaption></figure>
+    </div>
+    <p class="zrodlo">Bukiety i ceny z obecnego sklepu madlen.pl (26.11.2026). Każdy bukiet jest dostępny w kilku rozmiarach.</p>
+  </div>
+</section>
+
+<section class="szara" id="dostawa">
+  <div class="wrap zam">
+    <div>
+      <h2>Zamówienie w kilku krokach</h2>
+      <ol class="kroki">
+        <li><b>Wybierz bukiet i rozmiar</b> kompozycji.</li>
+        <li><b>Wpisz tekst na bilecik</b>, dołączymy go do kwiatów.</li>
+        <li><b>Wybierz termin i godzinę dostawy</b> albo odbiór w pracowni.</li>
+        <li><b>Zapłać wygodnie online.</b> W polu uwagi możesz wpisać swoje sugestie, resztą zajmiemy się my.</li>
+      </ol>
+      <p class="przypis">Dostarczamy w przedziałach: pon.-pt. 9:00-13:00 i 13:00-17:00, sobota 9:00-15:00. Dostawa na konkretną godzinę tylko na ceremonie pogrzebowe (kościół, kaplica, cmentarz).</p>
+    </div>
+    <table class="dostawa">
+      <caption>Koszt dostawy</caption>
+      <tr><td>Katowice</td><td>29 zł</td></tr>
+      <tr><td>Chorzów, Siemianowice Śląskie</td><td>39 zł</td></tr>
+      <tr><td>Bytom, Sosnowiec, Mikołów, Mysłowice, Czeladź, Będzin, Ruda Śląska, Imielin</td><td>49 zł</td></tr>
+      <tr><td>Zabrze, Dąbrowa Górnicza, Piekary Śląskie</td><td>79 zł</td></tr>
+      <tr><td>Gliwice, Tarnowskie Góry, Radzionków, Wojkowice, Tychy</td><td>89 zł</td></tr>
+      <tr><td>Odbiór w pracowni, ul. Sławka 5</td><td>0 zł</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="automaty" id="kwiatomaty">
+  <i class="kwiat rys" aria-hidden="true"></i>
+  <div class="wrap">
+    <h2>Kwiatomaty 24/7, gdy kwiaciarnie są już zamknięte</h2>
+    <p class="intro">Świeże bukiety czekają w trzech kwiatomatach w Katowicach przez całą dobę. Płacisz kartą lub BLIK-iem i od razu odbierasz kwiaty.</p>
+    <div class="adresy">
+      <div class="adres"><h3>Muchowiec</h3><p>ul. Szybowcowa 21, obok lotniska</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Szybowcowa+21+Katowice" rel="noopener">Pokaż na mapie</a></div>
+      <div class="adres"><h3>Dąb</h3><p>ul. Dębowa 58, obok Silesia City Center</p><a href="https://www.google.com/maps/search/?api=1&amp;query=D%C4%99bowa+58+Katowice" rel="noopener">Pokaż na mapie</a></div>
+      <div class="adres"><h3>Bogucice</h3><p>ul. Katowicka 19A</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Katowicka+19A+Katowice" rel="noopener">Pokaż na mapie</a></div>
+    </div>
+    <p class="info">Potrzebujesz odebrać zamówiony bukiet później albo bardzo wcześnie? Wstawimy go do kwiatomatu i podamy kod odbioru.</p>
+  </div>
+</section>
+
+<section id="slub">
+  <div class="wrap slub">
+    <div>
+      <div class="fotki">
+        <img src="img/slub-para-800.webp" srcset="img/slub-para-800.webp 800w, img/slub-para-1200.webp 1200w" sizes="(max-width:900px) 45vw, 300px" width="800" height="1067" loading="lazy" alt="Para młoda z bukietem ślubnym z białych storczyków">
+        <img src="img/slub-stol-1000.webp" srcset="img/slub-stol-1000.webp 1000w, img/slub-stol-1600.webp 1600w" sizes="(max-width:900px) 52vw, 360px" width="1000" height="800" loading="lazy" alt="Dekoracja stołu pary młodej z białymi różami i girlandą">
+      </div>
+      <p class="fot">fot. fotojanda.pl</p>
+    </div>
+    <div>
+      <h2>Kwiaty na ślub i wesele</h2>
+      <p style="margin-top:20px;color:var(--szary)">Bukiet ślubny, kwiaty na ceremonię i dekoracje sali. Ustalamy razem rodzaje kwiatów, kolorystykę i styl, w Katowicach i całym województwie śląskim.</p>
+      <ul class="opcje">
+        <li><h3>Tylko kwiaty</h3><p>Dla par, które kochają minimalizm. Kompozycje z podstawowymi dekoracjami: stojaki, naczynia, świeczniki i podtalerze. Od 200 zł, minimalne zamówienie to bukiet ślubny.</p></li>
+        <li><h3>Kompleksowa dekoracja</h3><p>Pełna oprawa florystyczna uroczystości we współpracy ze sprawdzonymi dekoratorami.</p></li>
+        <li><h3>Zrób to sam</h3><p>Dostarczamy kwiaty i dekoracje, a aranżację przygotowujecie sami.</p></li>
+      </ul>
+      <a class="btn" href="#kontakt">Zapytaj o termin ślubu</a>
+    </div>
+  </div>
+</section>
+
+<section class="szara" id="warsztaty">
+  <div class="wrap warsz">
+    <div>
+      <h2>Warsztaty florystyczne</h2>
+      <p style="margin-top:20px;color:var(--szary)">Las w słoju, świąteczne stroiki i wianki. Pracujesz krok po kroku z florystką, a gotową kompozycję zabierasz do domu.</p>
+      <ul class="terminy">
+        <li><time datetime="2026-12-15">15.12</time><div>Las w słoju<span>MDK Witosa, Katowice</span></div></li>
+        <li><time datetime="2026-12-15">15.12</time><div>Świąteczny stroik na stół<span>Katowice</span></div></li>
+        <li><time datetime="2026-12-15">15.12</time><div>Świąteczne wianki na drzwi<span>Katowice</span></div></li>
+        <li><time datetime="2027-01-12">12.01</time><div>Las w słoju<span>MDK Witosa, Katowice</span></div></li>
+      </ul>
+      <a class="btn" href="#kontakt">Zapisz się na warsztaty</a>
+      <div class="firmy">
+        <h3>Dla firm</h3>
+        <p style="margin:8px 0 0;color:var(--szary)">Warsztaty integracyjne u nas, w Waszym biurze albo w dowolnym miejscu, abonamenty kwiatowe i zielone dekoracje biur na terenie Katowic i Śląska.</p>
+      </div>
+    </div>
+    <div class="fotki">
+      <img src="img/w-las-600.webp" srcset="img/w-las-600.webp 600w, img/w-las-864.webp 864w" sizes="(max-width:900px) 46vw, 290px" width="600" height="750" loading="lazy" alt="Las w słoju z drzewkiem bonsai i mchem">
+      <img src="img/w-stroik-600.webp" srcset="img/w-stroik-600.webp 600w, img/w-stroik-900.webp 900w" sizes="(max-width:900px) 46vw, 290px" width="600" height="750" loading="lazy" alt="Świąteczny stroik ze świecami i gałązkami jodły">
+    </div>
+  </div>
+</section>
+
+<section id="onas">
+  <div class="wrap onas">
+    <img src="img/magdalena-800.webp" srcset="img/magdalena-800.webp 800w, img/magdalena-1200.webp 1200w" sizes="(max-width:900px) 92vw, 520px" width="800" height="1000" loading="lazy" alt="Magdalena, założycielka Madlen Flowers, z kompozycją kwiatową w pracowni">
+    <div>
+      <blockquote>Florystyka to piękny, kreatywny zawód, który wykonuję z ogromną pasją i zaangażowaniem.</blockquote>
+      <div class="podpis"><i class="kwiat" aria-hidden="true"></i><span>Magdalena, założycielka Madlen Flowers.<br>Z szablistki stała się florystką.</span></div>
+      <p style="color:var(--szary)">Pracownia przy ul. Sławka 5, obok Silesia City Center. Tu powstają bukiety, flowerboxy, wiązanki pogrzebowe, lasy w słoju i dekoracje z mchu. Bukiet można odebrać osobiście albo zamówić z dostawą pod wskazany adres.</p>
+      <a class="btn" href="#kontakt">Odwiedź pracownię</a>
+    </div>
+  </div>
+</section>
+
+<section class="szara" id="kontakt">
+  <div class="wrap kontakt">
+    <div class="dane">
+      <h2>Kontakt</h2>
+      <dl>
+        <dt>Telefon</dt><dd><a href="tel:+48577974279">577 974 279</a> (też WhatsApp)</dd>
+        <dt>Zamówienia</dt><dd><a href="mailto:kwiaciarnia@madlen.pl">kwiaciarnia@madlen.pl</a></dd>
+        <dt>Śluby, firmy, warsztaty</dt><dd><a href="mailto:kontakt@madlen.pl">kontakt@madlen.pl</a></dd>
+        <dt>Pracownia</dt><dd>ul. Walerego Sławka 5, 40-833 Katowice</dd>
+      </dl>
+      <div class="godz">
+        <h3>Godziny</h3>
+        <p style="margin:0">Dostawy: pon.-pt. 9:00-17:00, sob. 9:00-15:00<br>Niedziela: zamówienia ustalane indywidualnie<br>Odbiór osobisty po wcześniejszym umówieniu godziny</p>
+      </div>
+      <div class="mapa" id="mapa" style="background-image:url(img/pracownia-1000.webp)">
+        <button class="btn jasny" type="button" id="mapaBtn">Pokaż mapę dojazdu</button>
+      </div>
+    </div>
+    <form onsubmit="event.preventDefault();this.querySelector('.uwaga').textContent='To podgląd strony - formularz zostanie podłączony w docelowej wersji.'">
+      <h3>Napisz do nas</h3>
+      <div class="dwa">
+        <div><label for="imie">Imię</label><input id="imie" autocomplete="name"></div>
+        <div><label for="tel">Telefon</label><input id="tel" type="tel" autocomplete="tel"></div>
+      </div>
+      <label for="temat">W jakiej sprawie?</label>
+      <select id="temat"><option>Bukiet na zamówienie</option><option>Kwiaty na ślub</option><option>Florystyka pogrzebowa</option><option>Warsztaty</option><option>Oferta dla firm</option></select>
+      <label for="wiad">Wiadomość</label>
+      <textarea id="wiad" placeholder="Np. data, okazja, ulubione kolory kwiatów"></textarea>
+      <button class="btn" type="submit">Wyślij wiadomość</button>
+      <p class="uwaga">Odpowiadamy najszybciej, jak to możliwe. Najszybciej przez telefon.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <div class="kol">
+      <div><span class="logo" aria-hidden="true"></span><p style="margin:0">Kwiaciarnia i pracownia florystyczna w Katowicach. Bukiety z dostawą, kwiatomaty 24/7, śluby i warsztaty.</p></div>
+      <div><h4>Sklep</h4><ul><li><a href="#bukiety">Bukiety</a></li><li><a href="#bukiety">Kwiaty w pudełku</a></li><li><a href="#bukiety">Kwiaty pogrzebowe</a></li><li><a href="#warsztaty">Warsztaty</a></li></ul></div>
+      <div><h4>Informacje</h4><ul><li><a href="#dostawa">Czas i koszty dostawy</a></li><li><a href="#dostawa">Formy płatności</a></li><li><a href="#kontakt">Reklamacje i zwroty</a></li><li><a href="#kontakt">Regulamin sklepu</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a href="tel:+48577974279">577 974 279</a></li><li><a href="mailto:kwiaciarnia@madlen.pl">kwiaciarnia@madlen.pl</a></li><li>ul. Sławka 5, Katowice</li><li><a href="https://www.instagram.com/madlenflowers.katowice/" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/search/top?q=Madlen%20Flowers" rel="noopener">Facebook</a></li></ul></div>
+    </div>
+    <div class="dol">
+      <span>© 2026 Madlen Flowers Kwiaciarnia Katowice</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=madlen.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top'),b=document.getElementById('burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=top.classList.toggle('otw');b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){top.classList.remove('otw');b.setAttribute('aria-expanded',false);document.body.style.overflow=''}});
+  // aktywna pozycja menu przy przewijaniu
+  var linki=[].slice.call(m.querySelectorAll('a[href^="#"]')),sek=linki.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  var io=new IntersectionObserver(function(w){w.forEach(function(x){if(x.isIntersecting){linki.forEach(function(a){a.classList.toggle('akt',a.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+  sek.forEach(function(s){if(s)io.observe(s)});
+  // karuzela: strzalki + przeciaganie mysza
+  var t=document.getElementById('tor');
+  document.querySelectorAll('.strzalki button').forEach(function(x){x.addEventListener('click',function(){var k=t.querySelector('.bukiet');t.scrollBy({left:(k.offsetWidth+24)*+x.dataset.kier,behavior:'smooth'})})});
+  var d=false,sx=0,sl=0,ruch=0;
+  t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;d=true;ruch=0;sx=e.clientX;sl=t.scrollLeft});
+  window.addEventListener('pointermove',function(e){if(!d)return;var dx=e.clientX-sx;ruch=Math.abs(dx);if(ruch>4)t.classList.add('ciag');t.scrollLeft=sl-dx});
+  window.addEventListener('pointerup',function(){if(!d)return;d=false;t.classList.remove('ciag')});
+  // mapa po kliknieciu
+  document.getElementById('mapaBtn').addEventListener('click',function(){var f=document.createElement('iframe');f.src='https://www.google.com/maps?q=Walerego+S%C5%82awka+5,+40-833+Katowice&output=embed';f.title='Mapa dojazdu do pracowni Madlen Flowers';f.loading='lazy';document.getElementById('mapa').appendChild(f);this.remove()});
+})();
+</script>
+</body>
+</html>
